@@ -1,0 +1,205 @@
+html, body{
+    margin: 0px;
+    /* background-color: #2F4F38; */
+    color: white;
+    background-image: url("/assets/img/fichas/mesa2.jpg");
+    background-size: cover;
+}
+/* CABECERA Y NAV */
+.cabecera{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    margin-bottom: 10px;
+
+}
+.nav-links{
+    display: flex;
+    gap: 20px;
+}
+.cabecera-links{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.cabecera-titulo{
+    margin: 0;
+}
+
+/* JUEGO */
+.puntos{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 32px;
+}
+.dinero{
+    width: 40px;
+}
+
+.juego{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    
+}
+
+.contenedor-botones{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.botones{
+    width: 155px; 
+    height: 35px;
+    font-size: 14px;
+    color: black;
+}
+/* Boton nuevo juego */
+.nuevo {
+    background-color: #28a745;
+}
+/* Boton pedir */
+.pedir {
+    background-color: #007bff;
+}
+/* Boton detener */
+.detener {
+    background-color: #dc3545;
+}
+/* Boton borrar */
+.borrar{
+    background-color: rgb(219, 219, 73);
+}
+/* Boton habilitado */
+.botones:hover:enabled {
+    opacity: 1;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+/* Botones deshabilitados */
+.botones:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+.contenedor-cartas{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+}
+.carta{
+    position: relative;
+    width: 80px;
+    left: 60px;
+    margin-left: -75px;
+}
+
+.puntaje {
+    display: inline-block;
+    background-color: #1E90FF; /* Azul vibrante */
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+#jugador-carta, #computadora-carta{
+    margin: 5px;
+    padding: 0px 60px 0px 15px;
+    height: 120px
+}
+
+/* Fichas */
+.contenedor-fichas{
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 0 45px 0;
+}
+.fichas{
+    display: flex;
+    gap: 15px;
+    padding: 25px;
+    text-align: end;
+    border: solid;
+    border-color: darkgrey;
+    background-color: rgba(90, 68, 68, 0.963);
+    /* opacity: 0.5; */
+}
+
+.monedas {
+  height: 60px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.monedas_hover {
+  transform: scale(0.9);
+}
+.apuesta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-monedas {
+  position: relative;
+  width: 280px;
+  height: 175px;
+  /* background-color: #2F4F38; */
+  overflow: hidden;
+}
+.contenedor-dinero-apostado{
+    display: inline-flex;  
+    margin: 0;
+    padding: 0 8px 0 8px;
+    background-color:  rgba(90, 68, 68, 0.963);
+
+}
+.div-monedas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.ficha-apostada {
+  position: absolute;
+  height: 40px;
+  animation: caer 0.3s ease forwards;
+}
+
+@keyframes caer {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.monedas:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Footer */
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    padding: 32px;
+}
+.footer-img{
+    width: 40px;
+    height: 40px;
+}

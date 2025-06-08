@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="cabecera">
+        <h1 class="cabecera-titulo">BlackJack</h1>
+        <nav class="nav-links">
+            <a href="#" class="cabecera-links" >Sobre mí</a>
+            <a href="#" class="cabecera-links" >Contacto</a>
+            <a href="#" class="cabecera-links" >Reglas</a>
+        </nav>
+    </header>
+
+    
+    <!-- Puntos -->
+    <div class="puntos">
+        <img class="dinero" src="assets/img/fichas/dinero.png" alt="">
+        <span>$</span><span id="dinero-ganado" ></span>
+    </div>
+    <!-- Juego -->
+    <div class="juego">
+
+        <div>
+            <div class="contenedor-monedas" id="monedas-apostadas">
+                <!-- <img src="assets/img/fichas/moneda.png" alt=""> -->
+            </div>
+            <div class="contenedor-dinero-apostado">
+                <p>Total apostado: <span id="total">0</span></p>
+            </div>
+        </div>
+
+        
+        <div class="contenedor-cartas">
+            <small class="puntaje">0</small>
+                <div id="jugador-carta" class="divCartas">
+                    <!--<img class="carta" src="assets/cartas/10D.png">-->
+                </div>
+                
+                <small class="puntaje">0</small>
+                <div id="computadora-carta" class="divCartas">
+                    <!--<img class="carta" src="assets/cartas/10D.png">-->
+                </div>
+            </div> 
+    </div>
+
+    <!-- Botones, fichas y apuesta -->
+    <div class="contenedor-fichas">
+        <!-- Botones  -->
+        <div class="contenedor-botones">
+            <!-- </div> -->
+            <!-- Fichas para apostar -->
+            <div class="fichas">
+                <input data-valor="10" data-img="ficha-de-casino" class="monedas" id="miInput" type="image" src="assets/img/fichas/ficha-de-casino.png" alt="">
+                <input data-valor="25" data-img="ficha-de-casinao" class="monedas" id="miInput" type="image" src="assets/img/fichas/ficha-de-casinao.png" alt="">
+                <input data-valor="50" data-img="moneda" class="monedas" id="miInput" type="image" src="assets/img/fichas/moneda.png" alt="">            
+                <!-- Borrar apuesta -->
+                <button id="btnBorrar" class="botones borrar">Borrar apuesta</button>
+                <!-- Apostar -->
+                <button class="botones nuevo" id="btnNuevo" disabled="disabled" >Apostar</button>
+                <!-- Pedir carta -->
+                <button class="botones pedir" id="btnPedir" disabled="disabled">Pedir Carta</button>
+                <!-- Detener -->
+                <button class="botones detener" id="btnDetener" disabled="disabled">Plantarse</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer class="footer"> 
+        <a href="https://www.facebook.com/franck.luna.90"> 
+            <img src="assets/img/redes/facebook.png" alt="" class="footer-img"> 
+        </a>
+        <a href="https://www.instagram.com/franckselenator">
+            <img src="assets/img/redes/instagram.png" alt="#" class="footer-img"> 
+        </a>
+        <a href="https://www.linkedin.com/franco-luna-238695253"> 
+            <img src="assets/img/redes/linkedin.png" alt="" class="footer-img"> 
+        </a>
+    </footer>
+    
+    <script src="assets/js/underscore-min.js"></script>
+    <script src="assets/js/juego.js"></script>
+</body>
+</html>
