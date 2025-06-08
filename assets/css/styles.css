@@ -2,7 +2,7 @@ html, body{
     margin: 0px;
     /* background-color: #2F4F38; */
     color: white;
-    background-image: url("/assets/img/fichas/mesa2.jpg");
+    background-image: url("assets/img/fichas/mesa2.jpg");
     background-size: cover;
 }
 /* CABECERA Y NAV */
